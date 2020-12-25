@@ -14,7 +14,7 @@ import org.junit.Test;
 
     @Test
     public void whenExist5114() {
-        boolean result = Triangle.exist(6, 6, 4);
-        assertThat(result, is(true));
+        boolean result = Triangle.exist(6, 11, 4);
+        assertThat(result, is(false));
         }
 }
