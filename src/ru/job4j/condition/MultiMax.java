@@ -29,8 +29,8 @@ public class MultiMax {
 
 
     public static void main(String[] args) {
-        System.out.println(MultiMax.max(8, 7, 34));
-        System.out.println(MultiMax.maxAnother(1, 6, 7));
+        System.out.println(MultiMax.max(10, 10, 1));
+        System.out.println(MultiMax.maxAnother(10, 10, 1));
     }
 }
 
