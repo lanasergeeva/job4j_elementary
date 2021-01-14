@@ -2,7 +2,7 @@ package ru.job4j.array;
 
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class CheckTest {
 
@@ -18,5 +18,12 @@ public class CheckTest {
         boolean[] input = new boolean[] {true, false, true};
         boolean result = Check.mono(input);
         assertThat(result, is(false));
+    }
+
+    @Test
+    public void whenDataMonoByFalseThenFalse() {
+        boolean[] input = new boolean[] {false, false, false};
+        boolean result = Check.mono(input);
+        assertThat(result, is(true));
     }
 }
