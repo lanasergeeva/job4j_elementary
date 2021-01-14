@@ -7,7 +7,7 @@ public class Merge {
             rsl[index] = left[index];
         }
         for (int index = 0; index < right.length; index++) {
-            rsl[index+left.length] = right[index];
+            rsl[index + left.length] = right[index];
         }
         return rsl;
     }
