@@ -23,4 +23,16 @@ public class MaxTest {
         int result = Max.max(4, 10);
         assertThat(result, is(10));
     }
+
+    @Test
+    public void whenMaxSeven() {
+        int result = Max.max(7, 5, 4);
+        assertThat(result, is(7));
+    }
+
+    @Test
+    public void whenMaxNine() {
+        int result = Max.max(9, 2, 3, 5);
+        assertThat(result, is(9));
+    }
 }
