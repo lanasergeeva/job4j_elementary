@@ -18,7 +18,7 @@ public class MergeTest {
 
     @Test
     public void whenReorder() {
-        int[] expect = {1, 3, 2, 4}; //здесь неправильно была указана проверка {1,2,3,4}
+        int[] expect = {1, 2, 3, 4};
         int[] result = Merge.merge(
                 new int[] {1, 3},
                 new int[] {2, 4}
@@ -62,6 +62,16 @@ public class MergeTest {
         int[] result = Merge.merge(
                 new int[] {},
                 new int[] {1, 2, 3, 4}
+        );
+        assertThat(result, is(expect));
+    }
+
+    @Test
+    public void MyTest() {
+        int[] expect = {1, 2, 3, 5, 6, 9};
+        int[] result = Merge.merge(
+                new int[] {1, 3, 6, 9},
+                new int[] {2, 5}
         );
         assertThat(result, is(expect));
     }
