@@ -35,4 +35,5 @@ public class MaxTest {
         int result = Max.max(3, 2, 9, 5);
         assertThat(result, is(9));
     }
+
 }
