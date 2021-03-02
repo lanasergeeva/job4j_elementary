@@ -1,4 +1,8 @@
 package ru.job4j.array;
+/*3. Объединить два отсортированных массива
+Даны два отсортированных по возрастанию массива.
+Как без сортировки их объединить в третий массив?
+ */
 
 public class Merge {
     public static int[] merge(int[] left, int[] right) {
